@@ -1,0 +1,6 @@
+<h5>Name: <%= @restaurant.name %></h5>
+<p>rating: <%= @restaurant.rating %></p>
+
+<%= link_to "All restaurants", restaurants_path %>
+<%= link_to "Edit Restaurant", edit_restaurant_path(@restaurant) %>
+<%= link_to "Destroy Restaurant", restaurant_path(@restaurant), method: :delete  %>
